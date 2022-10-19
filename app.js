@@ -1,10 +1,13 @@
 const cols = document.querySelectorAll('.col')
 
-document.addEventListener('keydown', (event) => {
+const button = document.querySelector('.main-btn')
+
+button.addEventListener('click', (event) => {
   event.preventDefault()
-  if (event.code.toLowerCase() === 'enter') {
+  // console.log(event.code)
+  // if (event.code.toLowerCase() === 'enter') {
     setRandomColors()
-  }
+  // }
 })
 
 document.addEventListener('click', (event) => {

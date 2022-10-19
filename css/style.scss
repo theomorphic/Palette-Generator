@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+	font-family: Paifon;
+	src: url(../files/Paifon\ 1.otf);
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -5,47 +10,83 @@
 }
 
 body{
-	height: 100vh;
-	display: flex;
 	font-family: 'Roboto', sans-serif;
 }
-
-.col{
-	//распространяет по ширине
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;	
+}
+.main{
+	height: 90vh;
+	display: flex;
 	flex: 1;
+	flex-direction: row;
+	border-bottom: 2px solid #000;
+	.col{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		h2{
+			padding: 10px;
+			color: #fff;
+			border-radius: 10px;
+			transition: background 0.3s;
+		}
+		h2:hover{
+			background-color: rgba(0,0,0,0.1);
+			cursor: pointer;
+		}
+		button{
+			border: none;
+			background-color: transparent;
+			font-size: 1.5rem;
+			color: #fff;
+			border-radius: 10px;
+			padding: 10px;
+			transition: background 0.3s;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+}
+.header{
+	background-color: #f0f0f5;
+	color: #000;
+	font-size: 25px;
+	height: 10vh;
+
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+
 
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
-
-
-
-	h2{
-		padding: 10px;
-		color: #fff;
-		border-radius: 10px;
-		transition: background 0.3s;
+	.nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		.main-btn{
+			font-size: 25px;
+			margin: 0 2rem;
+			padding: .8rem;
+			border: none;
+			border-radius: 30px;
+			background-color: #e6e6e9;
+			cursor: pointer;
+			transition: .3s ease;
+			box-shadow: 1px 1px 3px black;
+		}
+		.main-btn:hover{
+			background-color: #dbdbdf;
+		}
+		.main-btn:active{
+			background-color: #d5d5d6;
+		}
 	}
-
-	h2:hover{
-		background-color: rgba(0,0,0,0.1);
-		cursor: pointer;
-	}
-
-	button{
-		border: none;
-		background-color: transparent;
-		font-size: 1.5rem;
-		color: #fff;
-		border-radius: 10px;
-		padding: 10px;
-		transition: background 0.3s;
-	}
-
-	button:hover{
-		background-color: rgba(0,0,0,0.1);
-		cursor: pointer;
-	}
-
 }

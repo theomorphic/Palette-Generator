@@ -1,2 +1,2 @@
 # Palette Generator 
-#### https://theomorphic.github.io/Palegen
+#### https://theomorphic.github.io/Palette-Generator

@@ -22,7 +22,6 @@ body{
 	display: flex;
 	flex: 1;
 	flex-direction: row;
-	border-bottom: 2px solid #000;
 	.col{
 		flex: 1;
 		display: flex;
@@ -55,14 +54,10 @@ body{
 	}
 }
 .header{
-	background-color: #f0f0f5;
+	background-color: #f5f5f8;
 	color: #000;
-	font-size: 25px;
+	font-size: 22px;
 	height: 10vh;
-
-	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-
 
 	display: flex;
 	align-items: center;
@@ -87,6 +82,17 @@ body{
 		}
 		.main-btn:active{
 			background-color: #d5d5d6;
+		}
+
+		.create-text,
+		.share-text{
+			flex-grow: 1;
+			flex-basis: 0;
+			text-align: center;
+		}
+
+		.share-text{
+			width: 200px;
 		}
 	}
 }

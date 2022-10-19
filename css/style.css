@@ -24,7 +24,6 @@ body {
   display: flex;
   flex: 1;
   flex-direction: row;
-  border-bottom: 2px solid #000;
 }
 .main .col {
   flex: 1;
@@ -58,12 +57,10 @@ body {
 }
 
 .header {
-  background-color: #f0f0f5;
+  background-color: #f5f5f8;
   color: #000;
-  font-size: 25px;
+  font-size: 22px;
   height: 10vh;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
   display: flex;
   align-items: center;
 }
@@ -88,4 +85,13 @@ body {
 }
 .header .nav .main-btn:active {
   background-color: #d5d5d6;
+}
+.header .nav .create-text,
+.header .nav .share-text {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+.header .nav .share-text {
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */

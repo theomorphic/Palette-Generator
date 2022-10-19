@@ -3,9 +3,9 @@ const cols = document.querySelectorAll('.col')
 const button = document.querySelector('.main-btn')
 
 button.addEventListener('click', (event) => {
-  event.preventDefault()
-  // console.log(event.code)
-  // if (event.code.toLowerCase() === 'enter') {
+  event.preventDefault() //дебачит тогл замков, но запрещает f5
+  // console.log(event.code) эта штука выводит в терминал тип события
+  // if (event.code.toLowerCase() === 'enter') { эта штука работала для события keydown
     setRandomColors()
   // }
 })

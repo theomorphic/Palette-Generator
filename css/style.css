@@ -15,6 +15,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f5f5f8;
 }
 
 .container {
@@ -102,26 +103,6 @@ body {
   width: 200px;
 }
 
-@media (max-height: 1368px) {
-  .main {
-    height: 80.706rem;
-  }
-}
-@media (max-height: 1180px) {
-  .main {
-    height: 68.706rem;
-  }
-}
-@media (max-height: 1024px) {
-  .main {
-    height: 58.706rem;
-  }
-}
-@media (max-height: 937px) {
-  .main {
-    height: 60.706rem;
-  }
-}
 @media (max-height: 915px) {
   .main {
     height: 51.706rem;

@@ -55,6 +55,9 @@ body {
 .main .col button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+.main .col h1::before {
+  content: none;
+}
 
 .header {
   background-color: #f5f5f8;

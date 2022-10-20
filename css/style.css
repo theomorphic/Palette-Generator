@@ -50,6 +50,7 @@ body {
   padding: 10px;
   transition: background 0.3s;
   cursor: pointer;
+  display: block;
 }
 .main .col button:hover {
   background-color: rgba(0, 0, 0, 0.1);

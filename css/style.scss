@@ -7,6 +7,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	// user-select: none;
+
 }
 
 body{
@@ -41,12 +43,12 @@ body{
 		button{
 			border: none;
 			background-color: transparent;
-			// font-size: 2.5em;
 			color: #fff;
 			border-radius: 10px;
 			padding: 10px;
 			transition: background 0.3s;
 			cursor: pointer;
+			display: block;
 		}
 		button:hover{
 			background-color: rgba(0,0,0,0.1);
